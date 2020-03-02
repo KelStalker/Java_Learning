@@ -59,7 +59,7 @@ function addAFace(){
         if(i%3==1 && i%5==1)
             console.log(i);
         
-        else if(i%3===0)
+        else if(i%3==0)
             console.log('Fizz');
         
         else if(i%5==0 && i%3==1){
@@ -88,5 +88,4 @@ function addAFace(){
     // Here is a FOREACH method for any array datatype(s)
     myArray.forEach ( function (arrayItem) {
         console.log( 'Array item is: '+arrayItem );
-
     } )
