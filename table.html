@@ -1,32 +1,83 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="UTF-8">
-    <head>
-        <title>
-            Table Example
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h1>Table Example</h1>
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Table Example
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets: -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Scripts: -->
+    <!-- <script type="text/javascript" src="./js/day-2.js" defer></script> -->
+    <script type="text/javascript" src="./js/table_exercise.js"> </script>
+
+</head>
+
+<body>
+    <h1>Table Example</h1>
+    <form id="formTable" action="#" method="get">
+
         <p>
             <strong>
                 Your assignment:
-            </strong> 
-            Create a form with (4) fields and a button. When the submit event occurs, add the entered data into a new row (tr) full of data (td) in the table's body (tbody).
+            </strong>
+            Create a form with (4) fields and a button. When the submit event occurs, add the entered data into a new
+            row (tr) full of data (td) in the table's body (tbody).
         </p>
-        <table><!-- Open your table... -->
-            <thead><!-- Open the table head... -->
-                <tr><!-- Start a row... -->
+
+        <form id="regTable" action="#" method="get">
+            
+            <label for="tName"></label>
+            Enter Your Name:
+            <input name="" id="tName" type="string">
+            </label>
+            <br><br>
+
+            <label for="tAge"></label>
+            Enter Your Age:
+            <input name="" id="tAge" type="number">
+            </label>
+            <br><br>
+
+            <label for="tClass"></label>
+            Enter Program:
+            <input name="" id="tName" type="string">
+            </label>
+            <br><br>
+
+            <label for="tCity"></label>
+            Enter City:
+            <input name="tCity" id="tCity" type="string">
+            </label>
+            <br><br>
+
+        </form>
+
+
+
+
+        <table>
+            <!-- Open your table... -->
+            <thead>
+                <!-- Open the table head... -->
+
+                <tr>
+                    <!-- Start a row... -->
                     <th>Name</th><!-- Enter a heading per column... -->
                     <th>Age</th>
-                    <th>School Class</th>
+                    <th>Class</th>
                     <th>City</th>
                 </tr>
             </thead>
-            <tbody><!-- Table body contains your data! -->
-                <tr><!-- Each row requires a "tr". -->
-                    <td>Bob</td><!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+            <tbody>
+                <!-- Table body contains your data! -->
+                <tr>
+                    <!-- Each row requires a "tr". -->
+                    <td>Bob</td>
+                    <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
                     <td>30</td>
                     <td>Programming</td>
                     <td>Edmonton</td>
@@ -39,5 +90,6 @@
                 </tr>
             </tbody>
         </table>
-    </body>
+</body>
+
 </html
