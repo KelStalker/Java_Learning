@@ -69,7 +69,7 @@ function addAFace(){
             console.log('Buzz');
 
     }
-    exercise1();
+    exercise1();PublicKeyCredential
 
 
 
