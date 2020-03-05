@@ -15,7 +15,7 @@
     <!-- Scripts: -->
     <!-- <script type="text/javascript" src="./js/day-2.js" defer></script> -->
     <script type="text/javascript" src="./js/table_exercise.js" defer> </script>
-<!-- "defer" make -->
+    <!-- "defer" make -->
 
 
 </head>
@@ -24,84 +24,82 @@
 
 
     <h1>Table Example</h1>
-  
-        <p>
-            <strong>
-                Your assignment:
-            </strong>
-            Create a form with (4) fields and a button. When the submit event occurs, add the entered data into a new
-            row (tr) full of data (td) in the table's body (tbody).
-        </p>
 
-        <!-- create the registration form -->
-        <form id="registration" action="#" method="get">
-            
-            <label for="tName"> 
+    <p>
+        <strong>
+            Your assignment:
+        </strong>
+        Create a form with (4) fields and a button. When the submit event occurs, add the entered data into a new
+        row (tr) full of data (td) in the table's body (tbody).
+    </p>
+
+    <!-- create the registration form -->
+    <form id="registration" action="#" method="get">
+
+        <label for="tName">
             Enter Your Name:
             <input name="tName" id="tName" type="string">
-            </label>
-            <br><br>
+        </label>
+        <br><br>
 
-            <label for="tAge">
+        <label for="tAge">
             Enter Your Age:
             <input name="tAge" id="tAge" type="number">
-            </label>
-            <br><br>
+        </label>
+        <br><br>
 
-            <label for="tProgram">
+        <label for="tProgram">
             Enter Program:
             <input name="tProgram" id="tProgram" type="string">
-            </label>
-            <br><br>
+        </label>
+        <br><br>
 
-            <label for="tCity">
+        <label for="tCity">
             Enter City:
             <input name="tCity" id="tCity" type="string">
-            </label>
-            <br><br>
+        </label>
+        <br><br>
 
-<!-- Create a button to submit the form -->
+        <!-- Create a button to submit the form -->
+        <button type="submit" id="runRegistration">
+            Update Registration Info
+        </button>
 
-            <button type="submit" id="runRegistration">
-                Update Registration Info
-            </button>
+    </form>
 
+    <table>
+        <!-- Open your table... -->
+        <thead>
+            <!-- Open the table head... -->
+            <tr>
+                <!-- Start a row... -->
+                <th>Name</th><!-- Enter a heading per column... -->
+                <th>Age</th>
+                <th>Class</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
 
-        </form>
-
-
-
-
-        <table>  <!-- Open your table... -->
-            <thead>  <!-- Open the table head... -->
-
-                <tr>  <!-- Start a row... -->
-                    <th>Name</th><!-- Enter a heading per column... -->
-                    <th>Age</th>
-                    <th>Class</th>
-                    <th>City</th>
-                </tr>
-            </thead>
-            <tbody id="table-body">
-
-                <!-- Table body contains your data! -->
-                <tr>  <!-- Each row requires a "tr". -->
-                    <td>Bob</td>
-                    <td>30</td>
-                    <td>Programming</td>
-                    <td>Edmonton</td>
-                    <td><button>Delete Rob</button></td>
-            <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
-                </tr>
-                <tr>
-                    <td>Sarah</td>
-                    <td>52</td>
-                    <td>Swimming</td>
-                    <td>Calgary</td>
-                    <td><button>Delete Rob</button></td>
-                </tr>
-            </tbody>
-        </table>
+            <!-- Table body contains your data! -->
+            <tr>
+                <!-- Each row requires a "tr". -->
+                <td>Bob</td>
+                <td>30</td>
+                <td>Programming</td>
+                <td>Edmonton</td>
+                <td><button>Delete Rob</button></td>
+                <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>52</td>
+                <td>Swimming</td>
+                <td>Calgary</td>
+                <td><button>Delete Rob</button></td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html
