@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+
+<head>
+
+    <title>
+        Table Example
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets: -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Scripts: -->
+    <!-- <script type="text/javascript" src="./js/day-2.js" defer></script> -->
+    <script type="text/javascript" src="./js/table_exercise.js" defer> </script>
+    <!-- "defer" make -->
+
+
+</head>
+
+<body>
+
+
+    <h1>Table Example</h1>
+
+    <p>
+        <strong>
+            Your assignment:
+        </strong>
+        Step 1) Create a To-Do List that has one input field that adds each entry to a list.
+    </p>
+
+    <!-- create the registration form -->
+    <form id="registration" action="#" method="get">
+
+        <label for="tName">
+            Enter Your Name:
+            <input name="tName" id="tName" type="string">
+        </label>
+        <br><br>
+
+        <label for="tAge">
+            Enter Your Age:
+            <input name="tAge" id="tAge" type="number">
+        </label>
+        <br><br>
+
+        <label for="tProgram">
+            Enter Program:
+            <input name="tProgram" id="tProgram" type="string">
+        </label>
+        <br><br>
+
+        <label for="tCity">
+            Enter City:
+            <input name="tCity" id="tCity" type="string">
+        </label>
+        <br><br>
+
+        <!-- Create a button to submit the form -->
+        <button type="submit" id="runRegistration">
+            Update Registration Info
+        </button>
+
+    </form>
+
+    <table>
+        <!-- Open your table... -->
+        <thead>
+            <!-- Open the table head... -->
+            <tr>
+                <!-- Start a row... -->
+                <th>Name</th><!-- Enter a heading per column... -->
+                <th>Age</th>
+                <th>Class</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+            <!-- Table body contains your data! -->
+            <tr>
+                <!-- Each row requires a "tr". -->
+                <td>Bob</td>
+                <td>30</td>
+                <td>Programming</td>
+                <td>Edmonton</td>
+                <td><button>Delete Rob</button></td>
+                <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+            </tr>
+            <tr>
+                <td>Sarah</td>
+                <td>52</td>
+                <td>Swimming</td>
+                <td>Calgary</td>
+                <td><button>Delete Rob</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html
