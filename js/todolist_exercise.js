@@ -19,7 +19,7 @@ function deleteRow(element) {  //Element will b the button we pressed
 }
 
 // Listen for click event
-toDoListForm = document.getElementById('toDoTable');
+toDoListForm = document.getElementById('toDoTableForm');
 addEventListener('submit', function (event) {
     // STOP the submission (event!)
     // Preents the page from refreshing or leaving for another blank page
