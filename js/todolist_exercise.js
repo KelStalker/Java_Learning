@@ -56,8 +56,10 @@ addEventListener('submit', function (event) {
     //  Target your html table body to write out the values
     var tableBody = document.getElementById("toDoTable");
 
-    //Inject the brand new row, with 4 table data columns inside
+    //Inject the brand new row, with table data columns inside
     tableBody.appendChild(newRow);
+    
+
 
 }   //close function
 )   //close event listener
