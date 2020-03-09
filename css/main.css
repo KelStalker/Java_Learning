@@ -54,6 +54,4 @@ p {
     margin: 1rem auto;
 }
 
-.my-link { /* Even works on dynamic elements! */
-    color: red;
 }

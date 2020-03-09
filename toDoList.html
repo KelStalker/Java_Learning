@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+
+<head>
+    <title>
+        Kels To Do List
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets: -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Scripts: -->
+    <!-- <script type="text/javascript" src="./js/day-2.js" defer></script> -->
+    <script type="text/javascript" src="./js/todolist_exercise.js" defer> </script>
+    <!-- "defer" make -->
+</head>
+
+<body>
+
+    <h1>Kels To-Do List</h1>
+    <p>
+        <strong>
+            The To-Do list assignment:
+        </strong>
+        Step 1) Create a To-Do List that has one input field that adds each entry to a list.
+    </p>
+
+
+    <!-- create the form -->
+    <form id="toDoTable" action="#" method="get">
+
+        <label for="tToDo">
+            Add To List
+            <input name="tToDo" id="tToDo" type="string">
+        </label>
+
+        <!-- Create a button to submit the form -->
+        <button type="submit" id="btn_updatetToDo">
+            Update To-Do List
+        </button>
+    </form>
+
+    <table>
+        <thead> 
+            <tr>
+                <!-- New Row ... -->
+                <th> Things to do </th> <!-- Can have multiple heading per column -->
+                <!-- <th>Other stuff I need to do</th> -->
+            </tr>
+        </thead>
+
+        <tBody id="toDoTable">
+
+            <!-- This is where the data goes -->
+            <tr>
+                <!-- Each row requires a "tr". -->
+                <td>Make my bed once a week</td>
+                <td><button> Delete Item </button></td>
+                <!-- Each cell in a row is "table data". Make sure it is the number of columns you are using. -->
+            </tr>
+        </tBody>
+    </table>
+</body>
+
+</html>
