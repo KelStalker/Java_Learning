@@ -191,6 +191,7 @@ myNavButton.addEventListener( 'click', function ( event ) {
     // When clicked, add/remove the "nav-open" class (in HTML.)
     myNav.classList.toggle( 'nav-open' );
 } );
+<<<<<<< HEAD
 
 /**
  * Let's dig in to objects!
@@ -291,3 +292,5 @@ Person.prototype.introduction = function () { // This is a method in our "Person
 }
 
 
+=======
+>>>>>>> e476fafca14a778fb2573ec786d01243a0f9556d
