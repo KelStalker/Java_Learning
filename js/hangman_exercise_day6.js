@@ -14,7 +14,7 @@ function hangmanGame(word, guesses) {
     }
 
     this.userGuess = function (letter) {
-        letter = prompt("Make a guess");
+        letter = prompt("Mke a guess");
 
         for (var i = 0; i < word.length; i++) {
             if (letter === word[i]) {
@@ -35,7 +35,7 @@ function hangmanGame(word, guesses) {
                 str = str + word[i]+" ";
             }
         }
-        console.log(str+" You have "+guesses+" guesses left");
+        console.log(str+" You have "+this.guesses+" guesses left");
 
 
             if (this.isWinner){
@@ -43,8 +43,9 @@ function hangmanGame(word, guesses) {
                 this.guesses = 0;
             }
     }
-
+    while (this.guesses != 0){
     this.userGuess();
+    }
 }
 
 game = new hangmanGame("truck", 5);
